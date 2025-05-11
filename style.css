@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #161616f1;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #2e7d32;
+  }
+  p{
+    color: #2e7d32;
+  }
+
+  #plastico{
+    background-color: #ED281F;
+  }
+
+  #papel{
+    background-color: #304F9F;
+  }
+
+  #vidro{
+    background-color: #2F8947;
+  }
+
+  #organico{
+    background-color: #7E5B1B;
+  }
+
+  #metal{
+    background-color: #FEC405;
+  }
+  
+  .itens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px auto;
+  }
+  
+  .item {
+    width: 150px;
+    height: 150px;
+    cursor: grab;
+  }
+
+
+  .lixeiras {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 70px;
+  }
+
+  .lixeira {
+    width: 120px;
+    height: 160px;
+    background-color: #333;
+    border-radius: 0 0 20px 20px; /* Curvatura no fundo */
+    position: relative;
+    box-shadow: inset 0 -4px 8px rgba(0,0,0,0.3), 0 4px 6px rgba(0,0,0,0.2);
+    border: 3px solid #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .lixeira::before {
+    content: "";
+    width: 100px;
+    height: 20px;
+    background-color: #444;
+    position: absolute;
+    top: -20px;
+    border-radius: 10px 10px 0 0;
+    border: 2px solid #666;
+  }
+  .lixeira img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .lixeira p {
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+
+  .lixeira:hover {
+    transform: scale(1.05);
+  }
+  
+  .lixeira p {
+    /* margin-top: 100px; */
+    font-weight: bold;
+    color: #333;
+  }
+  
+
+  #pontos {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  #pontos span {
+    color: #2e7d32; /* Cor verde para os pontos */
+  }
+
+  @media (max-width: 768px) {
+    .lixeiras {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+  
+    .lixeira {
+      text-align: center;
+      /* Definindo uma largura comum para todas as lixeiras */
+      width: calc(33.33% - 20px); /* 3 lixeiras na primeira linha */
+    }
+  
+    /* Ajusta as 2 últimas lixeiras para ficarem com o mesmo tamanho das 3 primeiras */
+    .lixeiras > .lixeira:nth-child(4),
+    .lixeiras > .lixeira:nth-child(5) {
+      width: calc(33.33% - 20px); /* Mantém o mesmo tamanho para as lixeiras de baixo */
+    }
+  
+    .lixeira img {
+      width: 80px;
+      height: auto;
+    }
+  
+    /* Ajuste para as imagens e texto */
+    .item {
+      width: 200px;
+      height: 200px;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    p {
+      font-size: 1.5rem;
+    }
+  
+    #pontos {
+      font-size: 2rem;
+    }
+  }
+  
+  
+  
+  
+  
+  

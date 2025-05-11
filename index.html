@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jogo da Reciclagem</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Jogo da Reciclagem</h1>
+  <p>Arraste os itens para a lixeira correta!</p>
+
+
+
+  <div class="itens">
+<!-- Plástico -->
+<img src="https://st.depositphotos.com/1003256/3470/i/600/depositphotos_34707921-stock-photo-plastic-bottles.jpg" id="plastico1" class="item" draggable="true" data-tipo="plastico" />
+<img src="https://st3.depositphotos.com/4218696/33608/i/600/depositphotos_336088352-stock-photo-disposable-single-use-plastic-objects.jpg" id="plastico2" class="item" draggable="true" data-tipo="plastico" />
+<img src="https://static9.depositphotos.com/1570716/1075/i/600/depositphotos_10754967-stock-photo-empty-used-plastic-bottles.jpg" id="plastico3" class="item" draggable="true" data-tipo="plastico" />
+
+<!-- Papel -->
+<img src="https://st4.depositphotos.com/1001030/25204/i/600/depositphotos_252047046-stock-photo-piles-of-old-cardboard-boxes.jpg" id="papel1" class="item" draggable="true" data-tipo="papel" />
+<img src="https://st2.depositphotos.com/1799575/5646/i/600/depositphotos_56463099-stock-photo-recycle.jpg" id="papel2" class="item" draggable="true" data-tipo="papel" />
+<img src="https://st4.depositphotos.com/1667625/37924/i/600/depositphotos_379247396-stock-photo-blurry-image-poorly-organized-warehouse.jpg" id="papel3" class="item" draggable="true" data-tipo="papel" />
+
+<!-- Vidro -->
+<img src="https://st.depositphotos.com/1866509/2046/i/600/depositphotos_20469193-stock-photo-glass-manufacturer.jpg" id="vidro1" class="item" draggable="true" data-tipo="vidro" />
+<img src="https://st.depositphotos.com/1005844/2017/i/600/depositphotos_20179549-stock-photo-glass-background.jpg" id="vidro2" class="item" draggable="true" data-tipo="vidro" />
+<img src="https://st3.depositphotos.com/4984749/12716/i/600/depositphotos_127166530-stock-photo-firearms-bullethole-on-the-glass.jpg" id="vidro3" class="item" draggable="true" data-tipo="vidro" />
+
+<!-- Metal -->
+<img src="https://st2.depositphotos.com/1220004/8047/i/450/depositphotos_80476096-stock-photo-tin-cans-empty-in-the.jpg" id="metal1" class="item" draggable="true" data-tipo="metal" />
+<img src="https://st4.depositphotos.com/18745344/31231/i/600/depositphotos_312319954-stock-photo-steek-rubbish-background-prepare-recycle.jpg" id="metal2" class="item" draggable="true" data-tipo="metal" />
+<img src="https://static6.depositphotos.com/1053932/550/i/600/depositphotos_5502883-stock-photo-assorted-beverages-cans-on-the.jpg" id="metal3" class="item" draggable="true" data-tipo="metal" />
+
+<!-- Orgânico -->
+<img src="https://st4.depositphotos.com/10614052/23624/i/600/depositphotos_236249282-stock-photo-trash-bin-organic-wastes-white.jpg" id="organico1" class="item" draggable="true" data-tipo="organico" />
+<img src="https://st5.depositphotos.com/34197642/80713/i/600/depositphotos_807132266-stock-photo-compost-bin-filled-organic-waste.jpg" id="organico2" class="item" draggable="true" data-tipo="organico" />
+<img src="https://st3.depositphotos.com/29384342/33910/i/600/depositphotos_339107610-stock-photo-fresh-organic-waste-coffee-set.jpg" id="organico3" class="item" draggable="true" data-tipo="organico" />
+
+  </div>
+
+  
+  
+  <div class="lixeiras">
+    <div class="lixeira" id="plastico" data-tipo="plastico">
+      <img src="https://raw.githubusercontent.com/viniciuszile/imagens/main/reciclagem.png" alt="Lixeira Plástico" />
+      <p>Plástico</p>
+    </div>
+  
+    <div class="lixeira" id="papel" data-tipo="papel">
+      <img src="https://raw.githubusercontent.com/viniciuszile/imagens/main/reciclagem.png" alt="Lixeira Papel" />
+      <p>Papel</p>
+    </div>
+    
+    <div class="lixeira" id="vidro" data-tipo="vidro">
+      <img src="https://raw.githubusercontent.com/viniciuszile/imagens/main/reciclagem.png" alt="Lixeira Vidro" />
+      <p>Vidro</p>
+    </div>
+    
+    <div class="lixeira" id="metal" data-tipo="metal">
+      <img src="https://raw.githubusercontent.com/viniciuszile/imagens/main/reciclagem.png" alt="Lixeira Metal" />
+      <p>Metal</p>
+    </div>
+    
+    <div class="lixeira" id="organico" data-tipo="organico">
+      <img src="https://raw.githubusercontent.com/viniciuszile/imagens/main/reciclagem.png" alt="Lixeira Orgânico" />
+      <p>Orgânico</p>
+    </div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

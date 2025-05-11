@@ -1,0 +1,113 @@
+/* Reset e base */
+body {
+    background-color: #161616;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #2e7d32;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  /* Certificado */
+  .certificado {
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 30px auto;
+    max-width: 800px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .certificado h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .certificado p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .certificado img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Reportagens */
+  .reportagens {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .reportagens h2 {
+    font-size: 1.6rem;
+    color: #FEC405;
+    margin-bottom: 20px;
+  }
+  
+  .reportagens p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #ddd;
+  }
+  
+  /* Mensagem final */
+  .mensagem-final {
+    background-color: #333;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #a5f2a5;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .certificado, .reportagens, .mensagem-final {
+      padding: 15px;
+      margin: 20px auto;
+    }
+  
+    .certificado h1 {
+      font-size: 1.6rem;
+    }
+  
+    .certificado p, .reportagens p, .mensagem-final {
+      font-size: 1rem;
+    }
+  
+    .reportagens h2 {
+      font-size: 1.4rem;
+    }
+  
+    footer {
+      font-size: 0.9rem;
+    }
+  }
+  
